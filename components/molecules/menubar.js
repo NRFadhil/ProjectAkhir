@@ -2,17 +2,17 @@ import AtomsText from "../atoms/text";
 import AtomsImage from "../atoms/image";
 import Link from "next/link";
 export default function menu({
-  go,
-  img,
+  let,
+  image,
   menu,
   click
 }) {
   return (
     <>
-		<Link href={go}>
+		<Link href={let}>
 		<div className="row mb-2" onClick={click}>
 			<div className="col-md-2">
-				<AtomsImage name="mt-1" image={img} radius="0px" border="none" width="15px" height="15px"/>
+				<AtomsImage name="mt-1" image={image} radius="0px" border="none" width="15px" height="15px"/>
 			</div>
 			<div className="col-md-10">
 				<div className="row" >

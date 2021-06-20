@@ -1,33 +1,22 @@
-import { useState, useEffect } from "react";
-
-export const list_users = [
-  {
-    id: 1,
-    name: "Chalid Ade Rahman",
-    username: "chalidade",
-    password: "123",
-  },
-  {
-    id: 2,
-    name: "Rico Fajar Afandi",
-    username: "rico",
-    password: "rico13",
-  },
-  {
-    id: 3,
-    name: "Abdul Aziz",
-    username: "aziz",
-    password: "aziz123",
-  },
-];
-
-let is_login = false;
-
-export function check_login() {
-  return is_login;
+export const user =[
+{
+	id:1,
+	username:"chalid",
+	password:"1234",
+},
+{
+	id:2,
+	username:"ade",
+	password:"123",
 }
-
-export function set_login(value) {
-  is_login = value;
-  return is_login;
+];
+let luser="";
+export function check_login()
+{
+	return luser;
+}
+export function set_login(value)
+{
+	luser=value;
+	return luser;
 }
